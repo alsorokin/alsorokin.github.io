@@ -212,9 +212,8 @@ window.onload = function () {
     var translatebutton = document.getElementById("translatebutton");
     translatebutton.onclick = translate;
 
-    var welcomelabel = document.getElementById("welcomelabel");
-    welcomelabel.innerText = "Добро пожаловать в переводчик звездограмм жизни! \n" +
-                             "Просто вставьте английский текст звездограммы в первое поле и нажмите \"Перевести\".";
+    var sourceTextBox = document.getElementById("sourceText");
+    sourceTextBox.oninput = translate;
 }
 
 function translate() {

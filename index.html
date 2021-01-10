@@ -5,13 +5,15 @@
     </head>
     <body>
         <div id="welcome">
-            <label id="welcomelabel">Hello world!</label>
+            <label id="welcomelabel1">Добро пожаловать в переводчик звездограмм жизни!</label>
+            <br/>
+            <label id="welcomelabel2">Просто вставьте английский текст звездограммы в первое поле. Перевод появится во втором поле.</label>
         </div>
         <div>
             <textarea id="sourceText" width="550px" height=300px></textarea>
         </div>
         <div>
-            <textarea id="translationText"></textarea>
+            <textarea id="translationText" readonly="true"></textarea>
         </div>
         <div>
             <button id="translatebutton" onclick="translate()">Перевести</button>
